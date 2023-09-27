@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HCI-Assignment-02</title>
+        <link rel = "stylesheet" href="formStyle.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="content">
+                <h1>FORM</h1>
+            </div>
+            <div class="formContent">
+                <form action="formSubmission.html">
+                    <fieldset>
+                        <div class="input-box">
+                            <label>Where is your favorite destination?</label><br>
+                            <input type="text" required style="width:350px">
+                        </div>
+                        <div class="input-box">
+                            <label>Place Description</label><br>
+                            <textarea rows="3" cols="50" required></textarea>
+                        </div>
+                        <div class="input-box"><br>
+                            <table style="background-color: transparent;">
+                                <tr>
+                                    <th>Continent</th>
+                                    <th>Country</th>
+                                    <th>City</th>
+                                </tr>
+                                <tr style="background-color: transparent;">
+                                    <td>
+                                        <select id="destination" name="destination" required>
+                                            <option value="">-- Select One --</option>
+                                            <option value="paris">Africa</option>
+                                            <option value="new-york">Antartica</option>
+                                            <option value="new-york">Asia</option>
+                                            <option value="tokyo">Australia</option>
+                                            <option value="london">Europe</option>
+                                            <option value="tokyo">North America</option>
+                                            <option value="london">South America</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" required style="width:100px"></td>
+                                    <td><input type="text" required style="width:100px"></td>
+                                </tr>
+                            </table><br>
+                            <table border="1">
+                                <tr>
+                                  <td colspan="3">Accommodation</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <label for="hotel">Hotel  </label><input type="radio" id="hotel" name="accommodation" value="hotel"><br>
+                                        <label for="lodge">Lodge  </label><input type="radio" id="lodge" name="accommodation" value="lodge" required>
+                                    </td>
+                                    <td>
+                                        <label for="date">Check-In Date</label><br><input type="date" id="checkInDate" name="checkInDate">
+                                    </td>                
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Preferred Check-In Times</h4>
+                                        <label for="earlyMorning">6 AM</label><input type="checkbox" id="earlyMorning" name="time"><br>
+                                        <label for="morning">9 AM</label><input type="checkbox" id="morning" name="time"><br>
+                                        <label for="afternoon">3 PM</label><input type="checkbox" id="afternoon" name="time"><br>
+                                        <label for="evening">6 PM</label><input type="checkbox" id="evening" name="time">
+                                    </td>
+                                </tr>
+                              </table><br>
+                              <div class="submission">
+                                <input type="submit">
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                  </form>
+            </div>
+        </div>
+    </body>
+</html>
